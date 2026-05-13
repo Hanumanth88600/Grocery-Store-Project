@@ -44,7 +44,7 @@ const ProductsPage = () => {
 
       const { data } =
         await axios.get(
-          "http://localhost:5000/api/products"
+          "https://grocery-store-project-l9y7.onrender.com/api/products"
         );
 
       setProducts(data);
@@ -78,7 +78,7 @@ const ProductsPage = () => {
     try {
 
       await axios.post(
-        "http://localhost:5000/api/products",
+        "https://grocery-store-project-l9y7.onrender.com/api/products",
         formData
       );
 
@@ -99,7 +99,7 @@ const ProductsPage = () => {
     try {
 
       await axios.delete(
-        `http://localhost:5000/api/products/${id}`
+        `https://grocery-store-project-l9y7.onrender.com/api/products/${id}`
       );
 
       fetchProducts();
@@ -137,7 +137,7 @@ const ProductsPage = () => {
       try {
 
         await axios.put(
-          `http://localhost:5000/api/products/${editId}`,
+          `https://grocery-store-project-l9y7.onrender.com/api/products/${editId}`,
           formData
         );
 

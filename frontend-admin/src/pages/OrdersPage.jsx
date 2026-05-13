@@ -21,7 +21,7 @@ const OrdersPage = () => {
 
     const { data } =
       await axios.get(
-        "http://localhost:5000/api/orders"
+        "https://grocery-store-project-l9y7.onrender.com/api/orders"
       );
 
     setOrders(data);
@@ -33,7 +33,7 @@ const OrdersPage = () => {
 
     const { data } =
       await axios.get(
-        "http://localhost:5000/api/staff"
+        "https://grocery-store-project-l9y7.onrender.com/api/staff"
       );
 
     setStaff(data);
@@ -60,7 +60,7 @@ const OrdersPage = () => {
       try {
 
         await axios.put(
-          `http://localhost:5000/api/orders/assign-picker/${orderId}`,
+          `https://grocery-store-project-l9y7.onrender.com/api/orders/assign-picker/${orderId}`,
           {
             pickerId,
           }
@@ -90,7 +90,7 @@ const OrdersPage = () => {
       try {
 
         await axios.put(
-          `http://localhost:5000/api/orders/assign-delivery/${orderId}`,
+          `https://grocery-store-project-l9y7.onrender.com/api/orders/assign-delivery/${orderId}`,
           {
             deliveryId,
           }
@@ -115,7 +115,7 @@ const OrdersPage = () => {
       try {
 
         await axios.put(
-          `http://localhost:5000/api/orders/admin-cash/${id}`
+          `https://grocery-store-project-l9y7.onrender.com/api/orders/admin-cash/${id}`
         );
 
         fetchOrders();

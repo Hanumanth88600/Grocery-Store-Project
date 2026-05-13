@@ -32,7 +32,7 @@ const PickerDashboard = () => {
 
         const { data } =
           await axios.get(
-            "http://localhost:5000/api/orders"
+            "https://grocery-store-project-l9y7.onrender.com/api/orders"
           );
 
         // SHOW ONLY ASSIGNED PICKER ORDERS
@@ -77,7 +77,7 @@ const PickerDashboard = () => {
       try {
 
         await axios.put(
-  `http://localhost:5000/api/orders/status/${id}`,
+  `https://grocery-store-project-l9y7.onrender.com/api/orders/status/${id}`,
   {
 
     orderStatus:
@@ -109,7 +109,7 @@ const PickerDashboard = () => {
       try {
 
         await axios.put(
-  `http://localhost:5000/api/orders/status/${id}`,
+  `https://grocery-store-project-l9y7.onrender.com/api/orders/status/${id}`,
   {
 
     orderStatus:

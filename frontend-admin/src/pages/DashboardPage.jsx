@@ -62,7 +62,7 @@ const DashboardPage = () => {
 
         const { data } =
           await axios.get(
-            "http://localhost:5000/api/admin/dashboard"
+            "https://grocery-store-project-l9y7.onrender.com/api/admin/dashboard"
           );
 
         setDashboardData(data);

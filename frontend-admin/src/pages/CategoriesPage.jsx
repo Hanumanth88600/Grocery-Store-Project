@@ -23,7 +23,7 @@ const CategoriesPage = () => {
 
         const { data } =
           await axios.get(
-            "http://localhost:5000/api/products"
+            "https://grocery-store-project-l9y7.onrender.com/api/products"
           );
 
         setProducts(data);

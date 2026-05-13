@@ -48,7 +48,7 @@ const fetchOrders =
 
       const { data } =
         await axios.get(
-          "http://localhost:5000/api/orders"
+          "https://grocery-store-project-l9y7.onrender.com/api/orders"
         );
 
       console.log(
@@ -178,7 +178,7 @@ const fetchOrders =
       try {
 
         await axios.put(
-          `http://localhost:5000/api/orders/cancel/${id}`,
+          `https://grocery-store-project-l9y7.onrender.com/api/orders/cancel/${id}`,
           {
             reason,
           }

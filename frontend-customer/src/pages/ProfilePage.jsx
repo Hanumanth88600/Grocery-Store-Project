@@ -89,7 +89,7 @@ const ProfilePage = () => {
 
         const { data } =
           await axios.get(
-            `http://localhost:5000/api/profile/${user._id}`
+            `https://grocery-store-project-l9y7.onrender.com/api/profile/${user._id}`
           );
 
         setProfile(data);
@@ -122,7 +122,7 @@ const ProfilePage = () => {
         setLoading(true);
 
         await axios.put(
-          `http://localhost:5000/api/profile/update/${user._id}`,
+          `https://grocery-store-project-l9y7.onrender.com/api/profile/update/${user._id}`,
           profile
         );
 
@@ -167,7 +167,7 @@ const ProfilePage = () => {
         setLoading(true);
 
         await axios.put(
-          `http://localhost:5000/api/profile/password/${user._id}`,
+          `https://grocery-store-project-l9y7.onrender.com/api/profile/password/${user._id}`,
           passwordData
         );
 
@@ -219,7 +219,7 @@ const ProfilePage = () => {
         setLoading(true);
 
         await axios.post(
-          `http://localhost:5000/api/profile/card/${user._id}`,
+          `https://grocery-store-project-l9y7.onrender.com/api/profile/card/${user._id}`,
           cardData
         );
 
@@ -262,7 +262,7 @@ const ProfilePage = () => {
           );
 
         await axios.put(
-          `http://localhost:5000/api/profile/update/${user._id}`,
+          `https://grocery-store-project-l9y7.onrender.com/api/profile/update/${user._id}`,
           {
             ...profile,
             savedCards:

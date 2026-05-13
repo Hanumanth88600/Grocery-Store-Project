@@ -59,7 +59,7 @@ const LoginPage = () => {
 
           const { data } =
             await axios.post(
-              "http://localhost:5000/api/auth/login",
+              "https://grocery-store-project-l9y7.onrender.com/api/auth/login",
               {
 
                 email:
@@ -106,7 +106,7 @@ const LoginPage = () => {
 
           const { data } =
             await axios.post(
-              "http://localhost:5000/api/auth/register",
+              "https://grocery-store-project-l9y7.onrender.com/api/auth/register",
               {
 
                 ...formData,

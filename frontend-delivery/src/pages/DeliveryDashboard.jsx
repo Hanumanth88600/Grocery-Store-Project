@@ -31,7 +31,7 @@ from "socket.io-client";
 // SOCKET
 
 const socket =
-  io("http://localhost:5000");
+  io("https://grocery-store-project-l9y7.onrender.com");
 
 const DeliveryDashboard = () => {
 
@@ -68,7 +68,7 @@ const fetchOrders =
 
       const { data } =
         await axios.get(
-          "http://localhost:5000/api/orders"
+          "https://grocery-store-project-l9y7.onrender.com/api/orders"
         );
 
       const filtered =
@@ -209,7 +209,7 @@ const fetchOrders =
               try {
 
                 await axios.post(
-                  "http://localhost:5000/api/location/update",
+                  "https://grocery-store-project-l9y7.onrender.com/api/location/update",
                   {
                     orderId,
                     latitude,
@@ -258,7 +258,7 @@ const fetchOrders =
       }
 
       await axios.put(
-        `http://localhost:5000/api/orders/status/${id}`,
+        `https://grocery-store-project-l9y7.onrender.com/api/orders/status/${id}`,
         {
 
           orderStatus:
@@ -287,7 +287,7 @@ const fetchOrders =
       try {
 
         await axios.put(
-          `http://localhost:5000/api/orders/cash/${id}`,
+          `https://grocery-store-project-l9y7.onrender.com/api/orders/cash/${id}`,
           {
             cashReceived:
               true,
@@ -329,7 +329,7 @@ const fetchOrders =
         }
 
         await axios.put(
-          `http://localhost:5000/api/orders/${id}`,
+          `https://grocery-store-project-l9y7.onrender.com/api/orders/${id}`,
           {
             orderStatus:
               "DELIVERED",

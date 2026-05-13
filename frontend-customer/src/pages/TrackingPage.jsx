@@ -19,7 +19,7 @@ from "socket.io-client";
 // SOCKET
 
 const socket =
-  io("http://localhost:5000");
+  io("https://grocery-store-project-l9y7.onrender.com");
 
 // MAP STYLE
 
@@ -71,14 +71,14 @@ const TrackingPage = () => {
 
           const locationResponse =
             await axios.get(
-              `http://localhost:5000/api/location/${orderId}`
+              `https://grocery-store-project-l9y7.onrender.com/api/location/${orderId}`
             );
 
           // ORDERS
 
           const orderResponse =
             await axios.get(
-              "http://localhost:5000/api/orders"
+              "https://grocery-store-project-l9y7.onrender.com/api/orders"
             );
 
           const currentOrder =

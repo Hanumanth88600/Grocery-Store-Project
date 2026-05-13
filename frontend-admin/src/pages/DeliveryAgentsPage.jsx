@@ -40,7 +40,7 @@ const DeliveryAgentsPage = () => {
 
       const { data } =
         await axios.get(
-          "http://localhost:5000/api/staff"
+          "https://grocery-store-project-l9y7.onrender.com/api/staff"
         );
 
       setStaff(data);
@@ -75,7 +75,7 @@ const DeliveryAgentsPage = () => {
       try {
 
         await axios.post(
-          "http://localhost:5000/api/staff",
+          "https://grocery-store-project-l9y7.onrender.com/api/staff",
           formData
         );
 
@@ -97,7 +97,7 @@ const DeliveryAgentsPage = () => {
       try {
 
         await axios.delete(
-          `http://localhost:5000/api/staff/${id}`
+          `https://grocery-store-project-l9y7.onrender.com/api/staff/${id}`
         );
 
         fetchStaff();

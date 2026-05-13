@@ -29,7 +29,7 @@ from "socket.io-client";
 // SOCKET CONNECTION
 
 const socket =
-  io("http://localhost:5000");
+  io("https://grocery-store-project-l9y7.onrender.com");
 
 const PickerDashboard = () => {
 
@@ -46,7 +46,7 @@ const PickerDashboard = () => {
 
         const { data } =
           await axios.get(
-            "http://localhost:5000/api/orders"
+            "https://grocery-store-project-l9y7.onrender.com/api/orders"
           );
 
         // ONLY PLACED + PICKING
@@ -147,7 +147,7 @@ const user =
         );
 
       await axios.put(
-        `http://localhost:5000/api/orders/${id}`,
+        `https://grocery-store-project-l9y7.onrender.com/api/orders/${id}`,
         {
           orderStatus:
             "PICKING",
@@ -171,7 +171,7 @@ const user =
       try {
 
         await axios.put(
-          `http://localhost:5000/api/orders/${id}`,
+          `https://grocery-store-project-l9y7.onrender.com/api/orders/${id}`,
           {
             orderStatus:
               "READY",

@@ -32,7 +32,7 @@ const DeliveryDashboard = () => {
 
         const { data } =
           await axios.get(
-            "http://localhost:5000/api/orders"
+            "https://grocery-store-project-l9y7.onrender.com/api/orders"
           );
 
         const filtered =
@@ -75,7 +75,7 @@ const DeliveryDashboard = () => {
       try {
 
         await axios.put(
-          `http://localhost:5000/api/orders/status/${id}`,
+          `https://grocery-store-project-l9y7.onrender.com/api/orders/status/${id}`,
           {
 
             orderStatus:
@@ -102,7 +102,7 @@ const DeliveryDashboard = () => {
       try {
 
         await axios.put(
-          `http://localhost:5000/api/orders/cash/${id}`,
+          `https://grocery-store-project-l9y7.onrender.com/api/orders/cash/${id}`,
           {
 
             cashReceived:
@@ -145,7 +145,7 @@ const DeliveryDashboard = () => {
         }
 
         await axios.put(
-          `http://localhost:5000/api/orders/${id}`,
+          `https://grocery-store-project-l9y7.onrender.com/api/orders/${id}`,
           {
 
             orderStatus:

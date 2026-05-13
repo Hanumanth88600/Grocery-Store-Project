@@ -102,7 +102,7 @@ const HomePage = () => {
 
         const { data } =
           await axios.get(
-            "http://localhost:5000/api/products"
+            "https://grocery-store-project-l9y7.onrender.com/api/products"
           );
 
         setProducts(data);
@@ -401,7 +401,7 @@ const orderData = {
 
       const response =
         await axios.post(
-          "http://localhost:5000/api/orders",
+          "https://grocery-store-project-l9y7.onrender.com/api/orders",
           orderData
         );
 
@@ -480,7 +480,7 @@ const orderData = {
 
         const { data } =
           await axios.post(
-            "http://localhost:5000/api/payment/create-order",
+            "https://grocery-store-project-l9y7.onrender.com/api/payment/create-order",
             {
               amount:
                 totalAmount,
@@ -514,7 +514,7 @@ const orderData = {
 
               const verify =
                 await axios.post(
-                  "http://localhost:5000/api/payment/verify",
+                  "https://grocery-store-project-l9y7.onrender.com/api/payment/verify",
                   response
                 );
 

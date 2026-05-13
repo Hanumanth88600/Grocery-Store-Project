@@ -57,9 +57,9 @@ const LoginPage = () => {
         const url =
           isLogin
 
-            ? "http://localhost:5000/api/auth/login"
+            ? "https://grocery-store-project-l9y7.onrender.com/api/auth/login"
 
-            : "http://localhost:5000/api/auth/register";
+            : "https://grocery-store-project-l9y7.onrender.com/api/auth/register";
 
         const { data } =
           await axios.post(

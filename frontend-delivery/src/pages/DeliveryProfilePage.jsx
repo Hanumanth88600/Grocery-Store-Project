@@ -33,7 +33,7 @@ const DeliveryProfilePage = () => {
 
         const { data } =
           await axios.get(
-            `http://localhost:5000/api/profile/${user._id}`
+            `https://grocery-store-project-l9y7.onrender.com/api/profile/${user._id}`
           );
 
         setProfile(data);
@@ -51,7 +51,7 @@ const DeliveryProfilePage = () => {
 
         const { data } =
           await axios.get(
-            "http://localhost:5000/api/orders"
+            "https://grocery-store-project-l9y7.onrender.com/api/orders"
           );
 
         const filtered =
@@ -83,7 +83,7 @@ const DeliveryProfilePage = () => {
       try {
 
         await axios.put(
-          `http://localhost:5000/api/profile/update/${user._id}`,
+          `https://grocery-store-project-l9y7.onrender.com/api/profile/update/${user._id}`,
           profile
         );
 

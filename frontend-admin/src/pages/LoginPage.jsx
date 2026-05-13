@@ -42,7 +42,7 @@ const LoginPage = () => {
 
         const { data } =
           await axios.post(
-            "http://localhost:5000/api/auth/login",
+            "https://grocery-store-project-l9y7.onrender.com/api/auth/login",
             {
               email,
               password,
@@ -84,6 +84,11 @@ const LoginPage = () => {
       } catch (error) {
 
         console.log(error);
+
+alert(
+  error.response?.data?.message ||
+  "Login Failed"
+);
 
         alert(
           error.response?.data
