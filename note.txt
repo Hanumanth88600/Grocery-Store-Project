@@ -4,7 +4,11 @@
 
 # mongodb+srv://hanumanthappah5258_db_user:<db_password>@e-commerce-mern-project.pvgup24.mongodb.net/?appName=E-commerce-MERN-Project
 
+mongodb+srv://hanumanthappah5258_db_user:Hanumanthappa2001@e-commerce-mern-project.pvgup24.mongodb.net/?appName=E-commerce-MERN-Project
 
+mongodb+srv://hanumanthappah5258_db_user:wQuVPJ07FY8esbSh@e-commerce-mern-project.pvgup24.mongodb.net/?appName=E-commerce-MERN-Project
+
+wQuVPJ07FY8esbSh
 # {
 #   "name": "Admin",
 #   "email": "admin@gmail.com",

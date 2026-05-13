@@ -4,6 +4,8 @@ const mongoose = require("mongoose");
 
 const dotenv = require("dotenv");
 
+// LOAD ENV FIRST
+
 dotenv.config();
 
 const cors = require("cors");
@@ -11,6 +13,8 @@ const cors = require("cors");
 const http = require("http");
 
 const { Server } = require("socket.io");
+
+// ROUTES
 
 const authRoutes =
   require("./routes/authRoutes");
@@ -24,23 +28,17 @@ const staffRoutes =
 const orderRoutes =
   require("./routes/orderRoutes");
 
-
 const locationRoutes =
   require("./routes/locationRoutes");
 
 const adminRoutes =
-  require("./routes/adminRoutes");  
+  require("./routes/adminRoutes");
 
-
-  const paymentRoutes =
-require("./routes/paymentRoutes");
-
+const paymentRoutes =
+  require("./routes/paymentRoutes");
 
 const profileRoutes =
-require("./routes/profileRoutes");
-
-
-dotenv.config();
+  require("./routes/profileRoutes");
 
 const app = express();
 
@@ -50,8 +48,11 @@ const server =
 // SOCKET.IO
 
 const io = new Server(server, {
+
   cors: {
+
     origin: "*",
+
     methods: [
       "GET",
       "POST",
@@ -60,7 +61,7 @@ const io = new Server(server, {
   },
 });
 
-// STORE IO GLOBALLY
+// STORE IO
 
 app.set("io", io);
 
@@ -102,17 +103,10 @@ app.use(
   adminRoutes
 );
 
-
 app.use(
   "/api/payment",
   paymentRoutes
 );
-
-app.use(
-  "/api/auth",
-  authRoutes
-);
-
 
 app.use(
   "/api/profile",
@@ -142,7 +136,7 @@ io.on(
   }
 );
 
-// DATABASE
+// DATABASE CONNECTION
 
 mongoose
   .connect(
@@ -167,6 +161,8 @@ app.get("/", (req, res) => {
     "Blinkit Backend Running..."
   );
 });
+
+// SERVER
 
 const PORT =
   process.env.PORT || 5000;
