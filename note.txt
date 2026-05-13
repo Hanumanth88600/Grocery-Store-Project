@@ -9,17 +9,8 @@ mongodb+srv://hanumanthappah5258_db_user:Hanumanthappa2001@e-commerce-mern-proje
 mongodb+srv://hanumanthappah5258_db_user:wQuVPJ07FY8esbSh@e-commerce-mern-project.pvgup24.mongodb.net/?appName=E-commerce-MERN-Project
 
 wQuVPJ07FY8esbSh
-# {
-#   "name": "Admin",
-#   "email": "admin@gmail.com",
-#   "password": "123456",
-#   "role": "admin"
-# }
 
-# {
-#   "email": "admin@gmail.com",
-#   "password": "123456"
-# }
+
 
 frontend npm start
 
@@ -32,3 +23,6 @@ AIzaSyD4VhNBl8Ccgq79dU68hyXYzVrTPz3utk4
 Test API Key  : rzp_test_SnxTvEjDW6ZUdg
 
 Test Key Secret :   wMpbpB67TYx0gFW5jRuWuw1G
+
+
+customer ---- https://grocery-store-project-one.vercel.app/
