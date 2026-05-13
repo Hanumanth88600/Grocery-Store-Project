@@ -1,0 +1,30 @@
+
+# hanumanthappah5258_db_user
+# wQuVPJ07FY8esbSh
+
+# mongodb+srv://hanumanthappah5258_db_user:<db_password>@e-commerce-mern-project.pvgup24.mongodb.net/?appName=E-commerce-MERN-Project
+
+
+# {
+#   "name": "Admin",
+#   "email": "admin@gmail.com",
+#   "password": "123456",
+#   "role": "admin"
+# }
+
+# {
+#   "email": "admin@gmail.com",
+#   "password": "123456"
+# }
+
+frontend npm start
+
+npm run dev
+
+
+AIzaSyD4VhNBl8Ccgq79dU68hyXYzVrTPz3utk4
+
+
+Test API Key  : rzp_test_SnxTvEjDW6ZUdg
+
+Test Key Secret :   wMpbpB67TYx0gFW5jRuWuw1G
