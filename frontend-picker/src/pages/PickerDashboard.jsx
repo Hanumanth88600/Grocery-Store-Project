@@ -15,7 +15,7 @@ import React,
 import axios from "axios";
 
 import {
-  FaBoxOpen,
+  
   FaCheckCircle,
 } from "react-icons/fa";
 
@@ -87,9 +87,11 @@ const user =
 
   useEffect(() => {
 
-    fetchOrders();
+  fetchOrders();
 
-  }, []);
+  // eslint-disable-next-line
+
+}, []);
 
   // SOCKET LISTENERS
 

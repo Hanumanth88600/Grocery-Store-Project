@@ -109,9 +109,11 @@ const fetchOrders =
 
   useEffect(() => {
 
-    fetchOrders();
+  fetchOrders();
 
-  }, []);
+  // eslint-disable-next-line
+
+}, []);
 
   // SOCKET EVENTS
 
