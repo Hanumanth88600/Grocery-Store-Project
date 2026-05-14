@@ -107,7 +107,7 @@ const fetchOrders =
 
   // INITIAL FETCH
 
-  useEffect(() => {
+ useEffect(() => {
 
   fetchOrders();
 
