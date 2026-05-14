@@ -15,8 +15,9 @@ import React,
 import axios from "axios";
 
 import {
-  
   FaCheckCircle,
+  FaUser,
+  FaBoxOpen,
 } from "react-icons/fa";
 
 import {
