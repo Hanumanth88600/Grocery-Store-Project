@@ -124,3 +124,35 @@ Live Tracking Starts
 Order Delivered
         ↓
 COD Settlement
+
+---
+
+# 🛠️ Tech Stack
+🎨 Frontend
+- React.js
+- Tailwind CSS
+- Framer Motion
+- Axios
+- Google Maps API
+- Socket.IO Client
+---
+
+# ⚙️ Backend
+- Node.js
+- Express.js
+- Socket.IO
+- JWT Authentication
+- Razorpay Integration
+
+
+# 🍃 Database
+- MongoDB Atlas
+- Mongoose ODM
+
+#☁️ Deployment
+- Vercel (Frontend)
+- Render (Backend)
+- MongoDB Atlas (Database)
+---
+
+📂 Project Structure
